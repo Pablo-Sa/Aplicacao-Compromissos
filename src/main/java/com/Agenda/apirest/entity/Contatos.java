@@ -17,12 +17,14 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Table(name="tb_contatos")
 public class Contatos extends AbstractEntity{
 	
-	 @NotEmpty
+	 
 	 private String nome;
 	 private String Sobrenome;
 	 private Date   datainclusao;
-
-	 public String getNome() {
+	 private Operadora operadora;
+	 
+	 
+	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
@@ -40,5 +42,11 @@ public class Contatos extends AbstractEntity{
 	public void setDatainclusao(Date datainclusao) {
 		this.datainclusao = datainclusao;
 	}
-
+	public Operadora getOperadora() {
+		return operadora;
+	}
+	public void setOperadora(Operadora operadora) {
+		this.operadora = operadora;
+	}
+	 
 }

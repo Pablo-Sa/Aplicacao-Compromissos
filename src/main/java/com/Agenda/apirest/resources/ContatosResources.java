@@ -1,11 +1,13 @@
 package com.Agenda.apirest.resources;
 
 
+
 import java.util.ArrayList;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -29,8 +31,8 @@ public class ContatosResources {
 	ContatoRepository contatoRepository;
 	
 	@GetMapping("/contatos")
-	public ResponseEntity<?> getAllContatos(){
-		return new ResponseEntity<>(contatoRepository.findAll(), HttpStatus.OK);
+	public ResponseEntity<?> getAllContatos(Pageable pageable){
+		return new ResponseEntity<>(contatoRepository.findAll(pageable), HttpStatus.OK);
 		
 	}
 	
