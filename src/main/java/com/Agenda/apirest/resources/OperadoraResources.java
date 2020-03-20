@@ -25,8 +25,8 @@ public class OperadoraResources {
 	
 	
 	@GetMapping("/operadora")
-	public ResponseEntity<?> getAllOperadora(Pageable pageable){
-		return new ResponseEntity<>(operadoraRepository.findAll(pageable), HttpStatus.OK);
+	public ResponseEntity<?> getAllOperadora(){
+		return new ResponseEntity<>(operadoraRepository.findAll(), HttpStatus.OK);
 		
 	}
 	
