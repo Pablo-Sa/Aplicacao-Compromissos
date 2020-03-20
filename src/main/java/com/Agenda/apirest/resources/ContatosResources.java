@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.Agenda.apirest.entity.Contatos;
 import com.Agenda.apirest.errors.ResourcesNotFoundException;
-import com.Agenda.apirest.repository.ContatoRepository;
 import com.Agenda.apirest.services.ContatosService;
 
 @RestController

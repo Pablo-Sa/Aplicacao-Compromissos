@@ -12,29 +12,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Agenda.apirest.entity.Operadora;
-import com.Agenda.apirest.repository.OperadoraRepository;
+import com.Agenda.apirest.services.OperadoraService;
 
 @RestController
-@RequestMapping(value="/")
+@RequestMapping(value = "/")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class OperadoraResources {
-
-	 
+	
 	@Autowired
-	OperadoraRepository operadoraRepository;
-	
-	
+	OperadoraService operadoraService;
+
 	@GetMapping("/operadora")
-	public ResponseEntity<?> getAllOperadora(){
-		return new ResponseEntity<>(operadoraRepository.findAll(), HttpStatus.OK);
-		
+	public ResponseEntity<?> getAllOperadora(Pageable pageable) {
+		return new ResponseEntity<>(operadoraService.findAll(pageable), HttpStatus.OK);
+
 	}
-	
-	
-	
+
 	@PostMapping("/operadora")
-	public ResponseEntity<?> saveOperadora(@RequestBody Operadora operadora){
-		return new ResponseEntity<>(operadoraRepository.save(operadora), HttpStatus.OK);
- 	}
-	
+	public ResponseEntity<?> saveOperadora(@RequestBody Operadora operadora) {
+		return new ResponseEntity<>(operadoraService.save(operadora), HttpStatus.OK);
+	}
+
 }
