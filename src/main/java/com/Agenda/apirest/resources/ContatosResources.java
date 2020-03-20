@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,10 +26,12 @@ import com.Agenda.apirest.repository.ContatoRepository;
 
 @RestController
 @RequestMapping(value="/")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ContatosResources {
 	
 	@Autowired
 	ContatoRepository contatoRepository;
+	
 	
 	@GetMapping("/contatos")
 	public ResponseEntity<?> getAllContatos(Pageable pageable){
@@ -36,11 +39,13 @@ public class ContatosResources {
 		
 	}
 	
+	
 	@GetMapping("/contatos/{id}")
 	public ResponseEntity<?>getContatoId(@PathVariable("id")Long id){
 		verifyIfContactExists(id);
 	 return new ResponseEntity<>(contatoRepository.findById(id),  HttpStatus.OK);
 	}
+	
 	
 	@PostMapping("/allcontatos")
 	public ResponseEntity<?> saveContatos(@Valid @RequestBody ArrayList<Contatos> contato){
@@ -50,16 +55,22 @@ public class ContatosResources {
 		return new ResponseEntity<>(contato,HttpStatus.OK);
 	}
 	
+	
+	
 	@PostMapping("/contatos")
 	public ResponseEntity<?> saveContato(@Valid @RequestBody Contatos contato){
 		return new ResponseEntity<>(contatoRepository.save(contato),HttpStatus.OK); 
 	}
+	
 	
 	@PutMapping("/contatos")
 	public ResponseEntity<?> updateContato(@RequestBody Contatos contato){
 		verifyIfContactExists(contato.getId());
 		return new ResponseEntity<>(contatoRepository.save(contato),HttpStatus.OK); 
 	}
+	
+	
+	
 	
 	@DeleteMapping("/contatos")
 	public ResponseEntity<?> deleteContato(@RequestBody Contatos contato){

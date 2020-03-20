@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,17 +16,21 @@ import com.Agenda.apirest.repository.OperadoraRepository;
 
 @RestController
 @RequestMapping(value="/")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class OperadoraResources {
 
 	 
 	@Autowired
 	OperadoraRepository operadoraRepository;
 	
+	
 	@GetMapping("/operadora")
 	public ResponseEntity<?> getAllOperadora(Pageable pageable){
 		return new ResponseEntity<>(operadoraRepository.findAll(pageable), HttpStatus.OK);
 		
 	}
+	
+	
 	
 	@PostMapping("/operadora")
 	public ResponseEntity<?> saveOperadora(@RequestBody Operadora operadora){
