@@ -13,5 +13,11 @@ class ApirestApplicationTests {
 	@Test
 	void saveContatoTesting() {
 
-	}		
+	}
+	
+	@Test
+	void contextLoads() {
+
+	}
+
 }

@@ -21,6 +21,12 @@ public class ContatosServiceTest {
 
 	@Autowired
 	private ContatosService contatosService;
+	
+	@Test
+	void contextLoads() {
+
+	}
+
 
 	@Test
 	public void save() {
