@@ -14,8 +14,12 @@ public class ContatosService {
 	@Autowired
 	public ContatoRepository contatoRepository;
 
-	public Contatos save(Contatos entity) {
-		return contatoRepository.save(entity);
+	public Contatos save(Contatos contato) {
+		return contatoRepository.save(contato);
+	}
+
+	public Iterable<Contatos> saveAll(Iterable<Contatos> contatos) {
+		return contatoRepository.saveAll(contatos);
 	}
 
 	public Iterable<Contatos> findAll(org.springframework.data.domain.Pageable pageable) {
@@ -25,7 +29,7 @@ public class ContatosService {
 	public Optional<Contatos> findById(Long id) {
 		return contatoRepository.findById(id);
 	}
-	
+
 	public Contatos delete(Contatos entity) {
 		contatoRepository.delete(entity);
 		return entity;

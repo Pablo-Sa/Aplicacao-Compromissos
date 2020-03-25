@@ -2,11 +2,10 @@ package com.Agenda.apirest.resources;
 
 import java.util.ArrayList;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -42,15 +41,13 @@ public class ContatosResources {
 	}
 
 	@PostMapping("/allcontatos")
-	public ResponseEntity<?> saveContatos(@Valid @RequestBody ArrayList<Contatos> contatos) {
-		for (Contatos contato : contatos) {
-			contatosService.save(contato);
-		}
+	public ResponseEntity<?> saveContatos(@RequestBody Iterable<Contatos> contatos) {
+		contatosService.saveAll(contatos);
 		return new ResponseEntity<>(contatos, HttpStatus.OK);
 	}
 
-	@PostMapping("/contatos")
-	public ResponseEntity<?> saveContato(@Valid @RequestBody Contatos contato) {
+	@PostMapping(path = "/contatos",consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<?> saveContato(@RequestBody Contatos contato) {
 		return new ResponseEntity<>(contatosService.save(contato), HttpStatus.OK);
 	}
 

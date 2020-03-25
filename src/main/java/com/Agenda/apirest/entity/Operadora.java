@@ -5,39 +5,20 @@ import java.math.BigDecimal;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-@Table(name="tb_operadora")
-public class Operadora extends AbstractEntity{
-	
+@Table(name = "tb_operadora")
+@Getter
+@Setter
+@AllArgsConstructor
+public class Operadora extends AbstractEntity {
+
 	private String nome;
-	private Long   codigo;
+	private Long codigo;
 	private String categoria;
 	private BigDecimal preco;
-	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public Long getCodigo() {
-		return codigo;
-	}
-	public void setCodigo(Long codigo) {
-		this.codigo = codigo;
-	}
-	public String getCategoria() {
-		return categoria;
-	}
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
-	}
-	public BigDecimal getPreco() {
-		return preco;
-	}
-	public void setPreco(BigDecimal preco) {
-		this.preco = preco;
-	}
-		
+
 }
