@@ -4,7 +4,9 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 import org.assertj.core.api.Assertions;
+import org.junit.Rule;
 import org.junit.jupiter.api.Test;
+import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -27,6 +29,8 @@ public class ContatosServiceTest {
 
 	}
 
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
 
 	@Test
 	public void save() {

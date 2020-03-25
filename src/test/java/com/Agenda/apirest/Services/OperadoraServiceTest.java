@@ -3,7 +3,9 @@ package com.Agenda.apirest.Services;
 import java.math.BigDecimal;
 
 import org.assertj.core.api.Assertions;
+import org.junit.Rule;
 import org.junit.jupiter.api.Test;
+import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,7 +26,9 @@ public class OperadoraServiceTest {
 	void contextLoads() {
 
 	}
-
+	
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
 
 	public void save() {
 		Operadora operadoratest = new Operadora("Algar", new Long(24), "Móvel", new BigDecimal(65.5));
