@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Agenda.apirest.entity.Contatos;
+import com.Agenda.apirest.entity.Operadora;
 import com.Agenda.apirest.repository.ContatoRepository;
 
 @Service

@@ -5,7 +5,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,12 +14,26 @@ import lombok.Setter;
 @Table(name = "tb_contatos")
 @Getter
 @Setter
-@AllArgsConstructor
+@NoArgsConstructor
 public class Contatos extends AbstractEntity {
 
 	private String nome;
-	private String Sobrenome;
+	private String sobrenome;
 	private Date datainclusao;
 	private Operadora operadora;
+	
+	
+	@Builder
+	public Contatos(
+	 String nome,
+	 String sobrenome,
+	 Date datainclusao,
+	 Operadora operadora) 
+{
+	this.nome = nome;
+	this.sobrenome = sobrenome;
+	this.datainclusao = datainclusao;
+	this.operadora = operadora;
+	}
 
 }
