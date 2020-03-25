@@ -59,7 +59,7 @@ public class EndPointOperadora {
 		Assertions.assertThat(response.getBody().getCategoria()).isEqualTo("Móvel");
 		Assertions.assertThat(response.getBody().getPreco()).isNotNull();
 	}
-	
+
 	@Test
 	public void testPostResponseDTOReturnStatusCode404() {
 		Operadora operadoraTest = new Operadora("Tim", new Long(52), "Móvel", new BigDecimal(68.8));
