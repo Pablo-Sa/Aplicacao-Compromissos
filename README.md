@@ -1,5 +1,5 @@
 # API-WS-BACK-END
-Implementado Spring Data, Spring Security, Mockito, JUnit, AssertJ, JWTToken, Swagger, Tratamento de Exceções, Paginação e etc.
+Implementado Spring Data, Spring Security, Mockito, JUnit, AssertJ, Swagger, Tratamento de Exceções, Paginação e etc.
 
 ## Front-End
 Lembrando que está API faz mensão ao Projeto AngularJS que possuo também em meus repositórios, tal é o Back-End da aplicação.
