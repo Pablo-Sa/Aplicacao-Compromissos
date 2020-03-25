@@ -15,6 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -33,6 +34,9 @@ public class EndPointContato {
 
 	@Autowired
 	private TestRestTemplate restTemplet;
+	
+	@LocalServerPort
+	private int port;
 
 	@MockBean
 	private ContatosService contatoService;
