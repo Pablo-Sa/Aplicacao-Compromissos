@@ -2,21 +2,21 @@
 Caso Queira Executar tal aplicação em um Container Docker, ambiente Ubuntu, favor executar os passos abaixo.
 - Instalar o Docker, caso não tenha o mesmo instalado.
  Passo a Passo
-- *1º sudo apt update
-- *Em seguida, instale alguns pacotes de pré-requisitos que permitem que o apt utilize pacotes via HTTPS:
-- *2º sudo apt install apt-transport-https ca-certificates curl software-properties-common
+- 1º sudo apt update
+- Em seguida, instale alguns pacotes de pré-requisitos que permitem que o apt utilize pacotes via HTTPS:
+- 2º sudo apt install apt-transport-https ca-certificates curl software-properties-common
 Então adicione a chave GPG para o repositório oficial do Docker em seu sistema:
-- *3º curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+- 3º curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 Adicione o repositório do Docker às fontes do APT:
-- *4º sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-- *5º sudo apt update
+- 4º sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+- 5º sudo apt update
 Finalmente, instale o Docker:
-- *6º sudo apt install docker-ce
+- 6º sudo apt install docker-ce
 - 7º O Docker agora deve ser instalado, o daemon iniciado e o processo ativado para iniciar na inicialização. Verifique se ele está sendo executado:
      sudo systemctl status docker
 após isso somente instalar o Docker-Compose com o comando abaixo
 -apt-get install docker-compose
-Por Fim está tudo instalado para poder à partir do Arquivo Docker-Compose.Yml que se encontra na raiz do projeto gerar uma imagem.
+-Por Fim está tudo instalado para poder à partir do Arquivo Docker-Compose.Yml que se encontra na raiz do projeto gerar uma imagem.
 simplesmente com o comando
 #docker-compose up
 Tudo Será feito de forma automática, todos os pacotes serão baixados, instalados e ambientado, somente lembrando que no arquivo Docker-Compose.Yml foi criado uma rede para realizar a ligação entre o banco de dados e a API, logo caso a rede já exista em seu Docker, dará conflito e não será gerado a imagem. Lembrando que tal comando deve ser executado pelo terminal na raiz do projeto, exatamente onde se encontra o arquivo Docker-Compose.yml.
