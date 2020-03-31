@@ -1,3 +1,5 @@
+# API-WS-BACK-END
+Implementado Spring Data, Spring Security, Mockito, JUnit, AssertJ, Swagger, Tratamento de Exceções, Paginação e etc.
 ## DOCKER
 Caso Queira Executar tal aplicação em um Container Docker, ambiente Ubuntu, favor executar os passos abaixo.
 - Instalar o Docker, caso não tenha o mesmo instalado.
@@ -21,9 +23,6 @@ simplesmente com o comando
 #docker-compose up
 Tudo Será feito de forma automática, todos os pacotes serão baixados, instalados e ambientado, somente lembrando que no arquivo Docker-Compose.Yml foi criado uma rede para realizar a ligação entre o banco de dados e a API, logo caso a rede já exista em seu Docker, dará conflito e não será gerado a imagem. Lembrando que tal comando deve ser executado pelo terminal na raiz do projeto, exatamente onde se encontra o arquivo Docker-Compose.yml.
 Com o comando acima realizado, a aplicação inteira já está configurada e se tudo deu certo você deverá conseguir acessar a mesma pelo navegador, através do endereço de IP da qual a máquina host que foi instalado o docker.
-
-# API-WS-BACK-END
-Implementado Spring Data, Spring Security, Mockito, JUnit, AssertJ, Swagger, Tratamento de Exceções, Paginação e etc.
 
 ## Front-End
 Lembrando que está API faz mensão ao Projeto AngularJS que possuo também em meus repositórios, tal é o Back-End da aplicação.
