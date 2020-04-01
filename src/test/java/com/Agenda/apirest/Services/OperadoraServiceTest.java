@@ -30,6 +30,7 @@ public class OperadoraServiceTest {
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 
+	@Test
 	public void save() {
 		Operadora operadoratest = new Operadora("Algar", new Long(24), "Móvel", new BigDecimal(65.5));
 		Operadora operadoraDTO = operadoraService.save(operadoratest);
