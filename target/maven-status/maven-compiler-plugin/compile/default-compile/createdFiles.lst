@@ -1,0 +1,14 @@
+com\Agenda\apirest\ApirestApplication.class
+com\Agenda\apirest\entity\Contatos.class
+com\Agenda\apirest\services\ContatosService.class
+com\Agenda\apirest\config\SwaggerConfig.class
+com\Agenda\apirest\entity\Operadora$OperadoraBuilder.class
+com\Agenda\apirest\services\OperadoraService.class
+com\Agenda\apirest\entity\Contatos$ContatosBuilder.class
+com\Agenda\apirest\errors\ResourcesNotFoundException.class
+com\Agenda\apirest\repository\OperadoraRepository.class
+com\Agenda\apirest\resources\OperadoraResources.class
+com\Agenda\apirest\entity\Operadora.class
+com\Agenda\apirest\resources\ContatosResources.class
+com\Agenda\apirest\entity\AbstractEntity.class
+com\Agenda\apirest\repository\ContatoRepository.class

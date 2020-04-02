@@ -44,7 +44,6 @@ public class ContatosResources {
 		return new ResponseEntity<>(contatosService.findById(id), HttpStatus.OK);
 	}
 
-	
 	@ApiOperation(value = "Salva uma Lista de Contatos")
 	@PostMapping("/allcontatos")
 	public ResponseEntity<?> saveContatos(@RequestBody Iterable<Contatos> contatos) {
@@ -52,14 +51,12 @@ public class ContatosResources {
 		return new ResponseEntity<>(contatos, HttpStatus.OK);
 	}
 
-	
 	@ApiOperation(value = "Salva um Contato")
-	@PostMapping(path = "/contatos",consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(path = "/contatos", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<?> saveContato(@RequestBody Contatos contato) {
 		return new ResponseEntity<>(contatosService.save(contato), HttpStatus.OK);
 	}
 
-	
 	@ApiOperation(value = "Atualiza um Contato")
 	@PutMapping("/contatos")
 	public ResponseEntity<?> updateContato(@RequestBody Contatos contato) {
@@ -67,7 +64,6 @@ public class ContatosResources {
 		return new ResponseEntity<>(contatosService.save(contato), HttpStatus.OK);
 	}
 
-	
 	@ApiOperation(value = "Delete um Contato")
 	@DeleteMapping("/contatos")
 	public ResponseEntity<?> deleteContato(@RequestBody Contatos contato) {
@@ -77,7 +73,7 @@ public class ContatosResources {
 	}
 
 	private void verifyIfContactExists(Long id) {
-		if (!contatosService.findById(id).isPresent())
+		if (contatosService.findById(id).equals(null))
 			throw new ResourcesNotFoundException("Contato Not Found by ID " + id);
 	}
 }

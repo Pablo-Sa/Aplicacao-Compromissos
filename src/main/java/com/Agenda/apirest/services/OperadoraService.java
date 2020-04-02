@@ -2,6 +2,7 @@ package com.Agenda.apirest.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.Agenda.apirest.entity.Operadora;
 import com.Agenda.apirest.repository.OperadoraRepository;
 
@@ -18,5 +19,10 @@ public class OperadoraService {
 	public Iterable<Operadora> findAll(org.springframework.data.domain.Pageable pageable) {
 		return operadoraRepository.findAll(pageable);
 	}
+	
+	public Operadora findById(Long id) {
+		return operadoraRepository.findById(id).get();
+	}
+
 	
 }

@@ -1,5 +1,8 @@
 package com.Agenda.apirest.services;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +29,8 @@ public class ContatosService {
 		return contatoRepository.findAll(pageable);
 	}
 
-	public Optional<Contatos> findById(Long id) {
-		return contatoRepository.findById(id);
+	public Contatos findById(Long id) {
+		return contatoRepository.findById(id).get();
 	}
 
 	public Contatos delete(Contatos entity) {
