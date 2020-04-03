@@ -2,27 +2,11 @@
 Implementado Spring Data, Spring Security, Mockito, JUnit, AssertJ, Swagger, Tratamento de Exceções, Paginação e etc.
 ## DOCKER
 Caso Queira Executar tal aplicação em um Container Docker, ambiente Ubuntu, favor executar os passos abaixo.
-- Instalar o Docker, caso não tenha o mesmo instalado.
- Passo a Passo
-- 1º sudo apt update
-- Em seguida, instale alguns pacotes de pré-requisitos que permitem que o apt utilize pacotes via HTTPS:
-- 2º sudo apt install apt-transport-https ca-certificates curl software-properties-common
-Então adicione a chave GPG para o repositório oficial do Docker em seu sistema:
-- 3º curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-Adicione o repositório do Docker às fontes do APT:
-- 4º sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-- 5º sudo apt update
-Finalmente, instale o Docker:
-- 6º sudo apt install docker-ce
-- 7º O Docker agora deve ser instalado, o daemon iniciado e o processo ativado para iniciar na inicialização. Verifique se ele está sendo executado:
-     sudo systemctl status docker
-após isso somente instalar o Docker-Compose com o comando abaixo
--apt-get install docker-compose
--Por Fim está tudo instalado para poder à partir do Arquivo Docker-Compose.Yml que se encontra na raiz do projeto gerar uma imagem.
+- Partindo do pressuposto que já tenha instalado o Docker e o Docker-Compose em seu host S.O Linx como : Ubuntu, CentoOS e derivados.
+ - Somente  à partir do Arquivo Docker-Compose.Yml que se encontra na raiz do projeto gerar uma imagem.
 simplesmente com o comando
-#docker-compose up
-Tudo Será feito de forma automática, todos os pacotes serão baixados, instalados e ambientado, somente lembrando que no arquivo Docker-Compose.Yml foi criado uma rede para realizar a ligação entre o banco de dados e a API, logo caso a rede já exista em seu Docker, dará conflito e não será gerado a imagem. Lembrando que tal comando deve ser executado pelo terminal na raiz do projeto, exatamente onde se encontra o arquivo Docker-Compose.yml.
-Com o comando acima realizado, a aplicação inteira já está configurada e se tudo deu certo você deverá conseguir acessar a mesma pelo navegador, através do endereço de IP da qual a máquina host que foi instalado o docker.
+# docker-compose up
+Tudo Será feito de forma automática, todos os pacotes serão baixados, instalados e ambientado, somente lembrando que no arquivo Docker-Compose.Yml foi criado uma rede para realizar a ligação entre o banco de dados e a API, logo caso a rede já exista em seu Docker, dará conflito e não será gerado a imagem. Lembrando que tal comando deve ser executado pelo terminal na raiz do projeto, exatamente onde se encontra o arquivo Docker-Compose.yml. Com o comando acima realizado, a aplicação inteira já está configurada e se tudo deu certo você deverá conseguir acessar a mesma pelo navegador, através do endereço de IP da qual a máquina host que foi instalado o docker na porta 8080, melhores informações para execução do projeto logo abaixo.
 
 ## Front-End
 Lembrando que está API faz mensão ao Projeto AngularJS que possuo também em meus repositórios, tal é o Back-End da aplicação.
