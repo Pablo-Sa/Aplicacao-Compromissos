@@ -12,7 +12,7 @@ simplesmente com o comando abaixo -- "docker-compose up".
 # Heroku
 * Fiz o Deploy desta aplicação no Heroku, abaixo segue o Link de acesso a mesma, tal lhe redirecionará para a página de documentação da API feita utilizando o Framework Swagger, que através dela, poderá verificar todos os EndPoints disponíveis, bem como a utilização dos mesmos.
 
--- > https://api-ws-back-end.herokuapp.com/swagger-ui.html  
+    * https://api-ws-back-end.herokuapp.com/swagger-ui.html  
 
 ## Front-End
 Lembrando que está API faz mensão ao Projeto AngularJS que possuo também em meus repositórios, tal é o Back-End da aplicação.
