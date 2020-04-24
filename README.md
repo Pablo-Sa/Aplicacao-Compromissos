@@ -10,7 +10,8 @@ simplesmente com o comando abaixo -- "docker-compose up".
 * Nota: Lembre-se que quando for executar em ambientes como CentOS tais S.O possuem firewall, logo será necessário realizar a liberação das portas no mesmo para poder acessar a aplicação. 
 
 # Heroku
-* Fiz o Deploy desta aplicação no Heroku, abaixo segue o Link de acesso a mesma, tal lhe redirecionará para a página de documentação da mesma (Swagger), que através dela, poderá verificar todos os EndPoints disponíveis, bem como a utilização dos mesmos.
+* Fiz o Deploy desta aplicação no Heroku, abaixo segue o Link de acesso a mesma, tal lhe redirecionará para a página de documentação da API feita utilizando o Framework Swagger, que através dela, poderá verificar todos os EndPoints disponíveis, bem como a utilização dos mesmos.
+
 -- > https://api-ws-back-end.herokuapp.com/swagger-ui.html  
 
 ## Front-End
