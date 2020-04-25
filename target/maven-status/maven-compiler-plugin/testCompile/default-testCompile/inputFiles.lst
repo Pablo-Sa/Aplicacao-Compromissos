@@ -1,5 +1,5 @@
-/home/pablo/Área de trabalho/API-WS-BACK-END/src/test/java/com/Agenda/apirest/Services/ContatosServiceTest.java
-/home/pablo/Área de trabalho/API-WS-BACK-END/src/test/java/com/Agenda/apirest/ApirestApplicationTests.java
-/home/pablo/Área de trabalho/API-WS-BACK-END/src/test/java/com/Agenda/apirest/EndPoints/ContatosServiceTest.java
-/home/pablo/Área de trabalho/API-WS-BACK-END/src/test/java/com/Agenda/apirest/EndPoints/OperadoraServiceTest.java
-/home/pablo/Área de trabalho/API-WS-BACK-END/src/test/java/com/Agenda/apirest/Services/OperadoraServiceTest.java
+/home/pablo/API-WS-BACK-END/src/test/java/com/Agenda/apirest/EndPoints/OperadoraServiceTest.java
+/home/pablo/API-WS-BACK-END/src/test/java/com/Agenda/apirest/Services/OperadoraServiceTest.java
+/home/pablo/API-WS-BACK-END/src/test/java/com/Agenda/apirest/EndPoints/ContatosServiceTest.java
+/home/pablo/API-WS-BACK-END/src/test/java/com/Agenda/apirest/ApirestApplicationTests.java
+/home/pablo/API-WS-BACK-END/src/test/java/com/Agenda/apirest/Services/ContatosServiceTest.java
