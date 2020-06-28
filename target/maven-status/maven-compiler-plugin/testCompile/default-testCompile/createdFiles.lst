@@ -1,5 +1,5 @@
-com/Agenda/apirest/EndPoints/OperadoraServiceTest.class
-com/Agenda/apirest/EndPoints/ContatosServiceTest.class
-com/Agenda/apirest/Services/OperadoraServiceTest.class
-com/Agenda/apirest/Services/ContatosServiceTest.class
-com/Agenda/apirest/ApirestApplicationTests.class
+br\com\agenda\endpoints\ContatosServiceTest.class
+br\com\agenda\services\ContatosServiceTest.class
+br\com\agenda\ApirestApplicationTests.class
+br\com\agenda\endpoints\OperadoraServiceTest.class
+br\com\agenda\services\OperadoraServiceTest.class

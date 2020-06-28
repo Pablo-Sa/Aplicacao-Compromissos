@@ -9,10 +9,10 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.Agenda</groupId>
-	<artifactId>apirest</artifactId>
+	<groupId>br.com.agenda</groupId>
+	<artifactId>aplicacaoCompromissos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apirest</name>
+	<name>aplicacaoCompromissos</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -33,12 +33,6 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.12</version>
 			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<version>1.4.200</version>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

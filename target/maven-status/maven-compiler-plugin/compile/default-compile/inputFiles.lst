@@ -1,12 +1,12 @@
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/entity/AbstractEntity.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/resources/ContatosResources.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/repository/ContatoRepository.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/ApirestApplication.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/repository/OperadoraRepository.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/entity/Contatos.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/services/ContatosService.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/services/OperadoraService.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/errors/ResourcesNotFoundException.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/resources/OperadoraResources.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/entity/Operadora.java
-/home/pablo/API-WS-BACK-END/src/main/java/com/Agenda/apirest/config/SwaggerConfig.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\errors\ResourcesNotFoundException.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\repository\OperadoraRepository.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\resources\ContatosResources.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\entity\AbstractEntity.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\services\OperadoraService.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\ApirestApplication.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\entity\Operadora.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\repository\ContatoRepository.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\entity\Contatos.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\resources\OperadoraResources.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\services\ContatosService.java
+C:\Users\pablo\Desktop\agora vai\API-WS-BACK-END\src\main\java\br\com\agenda\config\SwaggerConfig.java
