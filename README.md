@@ -1,4 +1,6 @@
-# API-WS-BACK-END
+# Aplicação Compromissos
+
+# BACK-END
 Implementado Spring Data, Mockito, JUnit, AssertJ, Swagger, Tratamento de Exceções, Paginação e etc.
 # DOCKER
 Caso Queira Executar tal aplicação em um Container Docker, ambiente Ubuntu, favor executar os passos abaixo.
