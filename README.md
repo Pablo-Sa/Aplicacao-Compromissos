@@ -2,9 +2,9 @@
 
 # BACK-END
 Implementado Spring Data, Mockito, JUnit, AssertJ, Swagger, Tratamento de Exceções, Paginação e etc.
-# DOCKER
-Caso Queira Executar tal aplicação em um Container Docker, ambiente Ubuntu, favor executar os passos abaixo.
-- Partindo do pressuposto que já tenha instalado o Docker e o Docker-Compose em seu host S.O Linx como : Ubuntu, CentoOS e derivados.
+## DOCKER
+Caso Queira Executar tal aplicação back-end em um Container Docker, ambiente Ubuntu ou Windows, favor executar os passos abaixo.
+- Partindo do pressuposto que já tenha instalado o Docker e o Docker-Compose em seu host S.O Linx como : Ubuntu, CentoOS e derivados ou Windows.
  - Somente  à partir do Arquivo `Docker-Compose.Yml` que se encontra na raiz do projeto pode-se gerar uma imagem Docker e por fim criar o Container.
 Basta simplesmente executar com o comando abaixo -- "docker-compose up".
 ## docker-compose up
