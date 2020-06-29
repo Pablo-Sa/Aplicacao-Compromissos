@@ -1,0 +1,41 @@
+.jumbotron {
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.form-control {
+    margin-bottom: 5px;
+}
+
+.selecionado {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+.page-home {
+    background-color: rgb(228, 143, 154);
+    border-radius: 20px;
+    border-style: dotted;
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    flex: 1;
+}
+
+.body {
+    background-color: rgba(14, 0, 65, 0.514);
+
+
+
+}
