@@ -1,22 +1,35 @@
-version: "3"
+version: '3'
+
 services:
   db:
     image: postgres:9.6
     networks:
       backend:
-         ipv4_address: 10.9.0.5
+         ipv4_address: 10.0.0.199
     restart: always
     environment:
-      POSTGRES_HOST_AUTH_METHOD: "trust"
+      POSTGRES_PASSWORD: "postgres"
       POSTGRES_USER: "postgres"
-      POSTGRES_DB: "agenda"
+      POSTGRES_DB: "agendadb"
     ports:
       - "5432:5432"
-  app:
-    container_name: "back-end"
+  pgadminapp:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "pablov.pereira12@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "Mudar@123"
+    ports:
+      - "16543:80"
+    depends_on:
+      - db
     networks:
       backend:
-         ipv4_address: 10.9.0.4
+         ipv4_address: 10.0.0.198
+  app:
+    container_name: "back-end-app-compromissos"
+    networks:
+      backend:
+         ipv4_address: 10.0.0.197
     image: app
     build:
        context: .
@@ -25,10 +38,10 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - db
+      - pgadminapp
 networks:
   backend:
     ipam:
       driver: default
       config:
-           - subnet: 10.9.0.0/24
+           - subnet: 10.0.0.0/24
